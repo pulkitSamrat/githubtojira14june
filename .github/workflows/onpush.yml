@@ -23,18 +23,13 @@ jobs:
         issuetype: Task
         summary: |
           Build completed for ${{ github.repository }}
-        description: |
-          Compare branch
-        fields: '{"customfield_10171": "test"}'
-
+          
     - name: Log created issue
       run: echo "Issue ${{ steps.create.outputs.issue }} was created"
-
-
-
-
+      
     - name: Transition issue
       uses: atlassian/gajira-transition@master
+      
       with:
         issue: ${{ steps.create.outputs.issue }}
         transition: "In progress"
