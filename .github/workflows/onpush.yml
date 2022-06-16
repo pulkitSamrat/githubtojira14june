@@ -1,7 +1,8 @@
-on:
-  push
 
 name: Git Jira issue transition
+
+on:
+  push
 
 jobs:
   test-transition-issue:
