@@ -1,0 +1,11 @@
+# SYNTAX 
+# FILE/DIRECTORY     USER
+# Each line is a file pattern followed by one or more owners.
+#
+
+
+*.js                @siddharth
+docs/*              @james
+components/*.md     @amitbind
+*.java              @charles
+/build/logs/        @doctocat
