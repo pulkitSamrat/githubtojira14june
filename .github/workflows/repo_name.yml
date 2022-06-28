@@ -1,0 +1,12 @@
+name: repo_name
+
+on: push
+
+jobs:
+    Assigning:
+      name: Creating ECR Repository
+      runs-on: ubuntu-latest
+      steps:
+        - name: Printing Name of the Repository.
+          run: |
+            echo ${{ github.event.repository.name }}.
